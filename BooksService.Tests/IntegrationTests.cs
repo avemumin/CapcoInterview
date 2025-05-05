@@ -43,7 +43,7 @@ namespace BooksService.Tests
         public async Task TestValidateBooks_BadRequests()
         {
             string titleError = "Title is invalid: Title must contain a minimum of 5 characters and a maximum of 255, and the first letter should be in upper case";
-            await CheckOnBadRequest(new BookForm
+      await CheckOnBadRequest(new BookForm
             {
                 Title = "initial Professional Development for Civil Engineers, Second edition",
                 Author = "Patrick Waterhouse",
